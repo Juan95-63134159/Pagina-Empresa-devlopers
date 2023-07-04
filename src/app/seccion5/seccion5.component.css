@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&family=Roboto:wght@100&family=Sassy+Frass&display=swap");
+* {
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-family: "Public Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Sassy Frass"; */
+}
+/* *********************/
+/* seccion S E R V I C I O S */
+/* *********************/
+
+#servicios {
+    padding: 70px 15px;
+    text-align: center;
+    /* background-image: linear-gradient(180deg, #64dace 0, #64dace 25%, #6cd8d8 50%, #41c6cb 75%, #00b6c1 100%); */
+    background: #1e2422;
+}
+
+#servicios .titulo-seccion {
+    text-align: center;
+    color: #ffffff;
+    /* color: #0c848c; */
+    font-size: 2.8rem;
+    font-family: Public Sans !important;
+    margin-bottom: 0.5em;
+}
+
+#servicios .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+#servicios .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#servicios .fila .servicio:hover {
+    box-shadow: 5px 5px 10px #0c848c, -5px -5px 10px #0c848c; 
+}
+
+#servicios .fila .servicio .icono {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;  
+    padding: 20px;
+    margin-bottom: 25px;
+    margin: .8em;
+    font-size: 25px;
+    place-content: center;
+    /* background: radial-gradient(circle, #a3dce0 5%, #08ebc1 45%); */
+    background: radial-gradient(#08ebc1, #0c848c);
+}
+
+#servicios .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-family: Public Sans !important;
+}
+
+
+#servicios .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#servicios .fila .servicio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#servicios .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+}

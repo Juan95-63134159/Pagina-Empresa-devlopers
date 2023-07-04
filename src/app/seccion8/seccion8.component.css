@@ -1,0 +1,172 @@
+@import "~swiper/swiper-bundle";
+
+* {
+  color: #04cddc;
+  font-weight: 900;
+  font-family: "Public Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Sassy Frass"; */
+}
+/* ESTILOS SWIPER */
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+  border-radius: 50%;
+  border: solid 0px;
+  background-color: #1e24225a;
+  width: 29px;
+  height: 29px;
+}
+.swiper-button-prev:hover {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #1e242290;
+}
+.swiper-button-next {
+  right: 10px;
+  left: auto;
+  border-radius: 50%;
+  border: solid 0px;
+  background-color: #1e24225a;
+  width: 29px;
+  height: 29px;
+}
+.swiper-button-next:hover {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #1e242290;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  bottom: 80px;
+  color: #04cddc;
+}
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 4px;
+  padding: 0.1rem;
+  border-radius: 50%;
+  border: solid #04cddc 1px;
+}
+/* FIN ESTILOS SWIPER */
+.box {
+  margin-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 583px;
+  background-color: #141414c8;
+}
+h3 {
+  position: absolute;
+  font-size: 3rem;
+  font-family: Public Sans !important;
+  margin-left: 65px;
+  margin-top: 30px;
+}
+.proyectos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+.imagen {
+  width: 240px;
+  height: 204px;
+  border-radius: 3px;
+  margin-top: 8rem;
+  filter: grayscale(0.8);
+  opacity: 0.8;
+  transition: all ease 0.3s;
+}
+.imagen:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+  opacity: 1;
+}
+figcaption {
+  margin-bottom: 8rem;
+  width: 240px;
+  background-color: #1e242268;
+  color: white;
+}
+.fondo {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 60px;
+  background-color: #1e2422;
+}
+.img-fondo {
+  width: 660px;
+  height: 800px;
+  position: absolute;
+  z-index: -1;
+  background-color: #1e2422;
+}
+/*INICIO MODO RESPONSIVE  */
+@media screen and (max-width: 1200px) {
+  .img-fondo {
+    width: 500px;
+    height: 640px;
+  }
+  .imagen {
+    width: 200px;
+    height: 164px;
+  }
+  figcaption {
+    margin-bottom: 8rem;
+    width: 200px;
+  }
+  .box {
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 460px;
+  }
+  h3 {
+    font-size: 2.7rem;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .proyectos {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  h3 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .proyectos {
+    height: 300px;
+  }
+  .img-fondo {
+    width: 370px;
+    height: 510px;
+  }
+  figcaption {
+    margin-bottom: 7.5rem;
+    width: 200px;
+  }
+  .box {
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 330px;
+  }
+}

@@ -1,0 +1,97 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+@import "~swiper/swiper-bundle";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Public Sans !important;
+  font-family: "Public Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+#hero {
+  width: 100%;
+  height: 82vh;
+}
+.presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+#hero-imagen {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactanos {
+  margin-top: 2rem;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4db6ac;
+  padding: 9px 24px 9px 24px;
+  border-radius: 40px;
+  border: 0;
+  transition: all ease 0.3s;
+}
+.contactanos:hover {
+  color: #fff;
+  background-color: #5111c0;
+}
+
+#hero {
+  width: 100%;
+  height: 82vh;
+  background: url("../../assets/img/3409297.jpg") top center;
+  background-size: cover;
+  opacity: 0.96;
+  background-color: transparent;
+  filter: none;
+  transform: translate(0px);
+  transition: all ease 0.3s;
+}
+#hero:hover {
+  opacity: 1;
+  /* transform: translateY(-20px); */
+}
+
+#hero .hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2em;
+  position: absolute;
+  margin: 13rem 10rem;
+}
+#hero p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+#hero h1 {
+  font-size: 54px;
+  color: #fff;
+}
+
+/* PARA DISEÑO RESPONSIVE */
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&family=Roboto:wght@100&family=Sassy+Frass&display=swap");
+* {
+  color: #04cddc   ;
+  font-weight: 900;
+  font-family: "Public Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #1e2422;
+  /* font-family: "Sassy Frass"; */
+}
+h3 {
+  font-size: 2.8rem;
+  font-family: Public Sans !important;
+  margin-bottom: 0.5em;
+}
+p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 0.5em;
+}
+a {
+  color: rgba(0, 164, 239, 1);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+fa-icon {
+  font-size: 30px;
+  transition: all 0.5s;
+}
+p:hover fa-icon{
+    color: #849695 ;
+}
+iframe {
+  border-color: aqua;
+  border: solid 1px;
+  border-radius: 4%;
+  width: 553px;
+  height: 380px;
+  transition: all 0.2s;
+}
+iframe:hover {
+  border-radius: 0;
+  border-color: rgba(0, 164, 239, 1);
+}
+iframe:active {
+  border-radius: 0;
+  border: 0;
+}
+.info{
+  margin: 15px;
+}
+.demo {
+  margin: 15px;
+}
+.box {
+  display: flex;
+  flex: 1 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 10rem; */
+}
+
+@media screen and (max-width: 1200px){
+  iframe {
+    width: 470px;
+    height: 300px;
+    transition: all 0.2s;
+  }
+  h3 {
+    font-size: 2.1rem;
+    /* margin-bottom: 0.5em; */
+  }
+  p {
+
+    font-size: 1rem;
+    /* margin-bottom: 0.5em; */
+  }
+  fa-icon {
+    font-size: 1.5rem;
+  }
+  .parrafo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1008px){
+  iframe {
+    width: 400px;
+    height: 230px;
+    /* transition: all 0.2s; */
+  }
+  h3 {
+    font-size: 1.8rem;
+    /* margin-bottom: 0.5em; */
+  }
+  p {
+
+    font-size: 0.9rem;
+    /* margin-bottom: 0.5em; */
+  }
+  fa-icon {
+    font-size: 1.3rem;
+  }
+}

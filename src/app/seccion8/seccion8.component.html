@@ -1,0 +1,29 @@
+<div class="roow">
+  <div class="fondo">
+    <img
+      class="img-fondo"
+      src="https://cdn.pixabay.com/photo/2017/07/31/21/49/skyscraper-2561415_1280.jpg"
+      alt="cielos"
+    />
+  </div>
+  <div class="box">
+    <h3>Proyectos recientes</h3>
+    <section class="proyectos">
+      <swiper
+        [slidesPerView]="3"
+        [spaceBetween]="10"
+        [navigation]="true"
+        [pagination]="{ clickable: true }"
+      >
+        <ng-template swiperSlide *ngFor="let item of img_proyectos">
+          <figure>
+            <img class="imagen" [src]="item" alt="tienda" />
+            <figcaption>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </figcaption>
+          </figure>
+        </ng-template>
+      </swiper>
+    </section>
+  </div>
+</div>
